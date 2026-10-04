@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAI GANESH CHATHARASUPALLI | Portfolio</title>
+  <meta name="description" content="Aspiring Software Engineer | Competitive Programmer | AI & IoT Developer" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-text">WELCOME TO MY PORTFOLIO</div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  <div class="loader-pct">0%</div>
+</div>
+
+<!-- CURSOR -->
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<!-- BACKGROUNDS -->
+<canvas id="particles-canvas"></canvas>
+<div class="grid-bg"></div>
+<div class="scanlines"></div>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#home" onclick="showPage('home');return false;">SAI GANESH </a>
+  <ul class="nav-links">
+    <li><a href="#home" data-page="home" class="active">Home</a></li>
+    <li><a href="#about" data-page="about">About</a></li>
+    <li><a href="#skills" data-page="skills">Skills</a></li>
+    <li><a href="#projects" data-page="projects">Projects</a></li>
+    <li><a href="#internships" data-page="internships">Experience</a></li>
+    <li><a href="#achievements" data-page="achievements">Achievements</a></li>
+    <li><a href="#certifications" data-page="certifications">Certs</a></li>
+    <li><a href="#resume" data-page="resume">Resume</a></li>
+    <li><a href="#contact" data-page="contact">Contact</a></li>
+  </ul>
+  <div class="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+
+<!-- ==================== HOME PAGE ==================== -->
+<div id="home" class="page active">
+  <canvas id="three-canvas"></canvas>
+  <div class="home-content">
+    <p class="home-greeting">WELCOME TO MY PORTFOLIO</p>
+    <h5 class="home-name">
+      <span class="name-sai">SAI GANESH CHATHARASUPALLI</span>
+    </h5>
+    <p class="home-title">M.Tech CSE @ IIT Guwahati &nbsp;|&nbsp; Software Engineer &nbsp;|&nbsp; Amazon SDE Intern</p>
+    <div class="home-typing-wrap">
+      <span class="typing-prefix">&gt; &nbsp;</span>
+      <span class="typing-text"></span>
+      <span class="typing-cursor"></span>
+    </div>
+    <div class="home-btns">
+      <a href="#projects" class="btn btn-primary" onclick="showPage('projects');return false;">
+        <span>⬡</span> View Projects
+      </a>
+      <a href="Sai_Ganesh_Resume.pdf" download class="btn btn-outline">
+        <span>↓</span> Download Resume
+      </a>
+      <a href="https://github.com/sai0543ganesh" target="_blank" class="btn btn-magenta">
+        <span>⌥</span> GitHub
+      </a>
+      <a href="#contact" class="btn btn-outline" onclick="showPage('contact');return false;">
+        <span>✉</span> Contact Me
+      </a>
+    </div>
+    <div class="home-socials">
+      <a href="https://github.com/sai0543ganesh" target="_blank" class="social-icon" title="GitHub">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.01-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.31-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.87.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22 0 1.61-.01 2.9-.01 3.3 0 .32.21.7.82.58C20.56 21.8 24 17.31 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <a href="https://in.linkedin.com/in/sai-ganesh-chatharasupalli-163287245" target="_blank" class="social-icon" title="LinkedIn (add your profile URL)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.21 24 24 23.23 24 22.28V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+      </a>
+      <a href="https://leetcode.com/saiganesh0543" target="_blank" class="social-icon" title="LeetCode">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+      </a>
+      <a href="https://www.codechef.com/users/saiganesh_18" target="_blank" class="social-icon" title="CodeChef">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.257.004C5.23.287.488 5.23.035 11.257c-.453 6.168 4.38 11.6 10.548 11.6h2.917c6.168 0 11-5.432 10.548-11.6C23.595 5.23 18.853.287 12.826.004h-1.57zm-.256 1.94h2.08c5.148.27 9.137 4.52 9.025 9.653-.118 5.37-4.562 9.676-9.934 9.535-5.373.14-9.817-4.165-9.934-9.535-.115-5.134 3.872-9.383 9.02-9.654l-.257.001z"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="home-stats">
+    <div class="stat-item">
+      <div class="stat-number">8.11</div>
+      <div class="stat-label">M.Tech CGPA</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">1870</div>
+      <div class="stat-label">LeetCode Max</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">3★</div>
+      <div class="stat-label">CodeChef</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">5+</div>
+      <div class="stat-label">Projects</div>
+    </div>
+  </div>
+  <div class="home-scroll" onclick="showPage('about')">
+    <span class="scroll-text">SCROLL DOWN</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</div>
+
+
+<!-- ==================== ABOUT PAGE ==================== -->
+<div id="about" class="page">
+  <div class="section-container">
+    <div class="section-header">
+      <p class="section-tag">// 01. about</p>
+      <h2 class="section-title">Who Am I</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div>
+        <div class="about-avatar">
+          <picture>
+            <source srcset="sai-ganesh.jpg 1200w" sizes="(max-width:600px) 80vw, (max-width:900px) 40vw, 240px">
+            <img src="sai-ganesh.jpg" alt="Sai Ganesh Chatharasupalli" loading="lazy">
+          </picture>
+        </div>
+        <div class="about-badges">
+          <span class="badge badge-cyan">Java</span>
+          <span class="badge badge-magenta">C++</span>
+          <span class="badge badge-green">Python</span>
+          <span class="badge badge-orange">Spring Boot</span>
+          <span class="badge badge-blue">AWS</span>
+          <span class="badge badge-cyan">React</span>
+          <span class="badge badge-magenta">Distributed Systems</span>
+          <span class="badge badge-green">PyTorch</span>
+        </div>
+        <div class="edu-card" style="margin-top:1.5rem;">
+          <h4>🎓 Education</h4>
+          <p><strong style="color:var(--text-primary)">M.Tech in Computer Science & Engineering</strong></p>
+          <p>Indian Institute of Technology, Guwahati</p>
+          <p style="color:var(--cyan);margin-top:0.3rem;font-size:0.8rem;">2025 – Present · CGPA 8.11</p>
+        </div>
+      </div>
+      <div class="about-content">
+        <h2>SAI GANESH CHATHARASUPALLI</h2>
+        <p class="subtitle">Software Engineer · M.Tech CSE · Distributed Systems & Machine Learning</p>
+        <p>
+          Computer Science graduate pursuing an M.Tech in CSE at IIT Guwahati, with hands-on experience in backend systems, cloud infrastructure, distributed systems, and machine learning.
+        </p>
+        <p>
+          I worked as an <strong style="color:var(--cyan)">Amazon SDE Intern</strong>, building event-driven AWS infrastructure and a Lambda-based event processing pipeline using S3, SQS and DLQ.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-item"><div class="highlight-icon">☁️</div><div class="highlight-text">Built <strong>event-driven AWS infrastructure</strong> across 4 regions during my Amazon internship</div></div>
+          <div class="highlight-item"><div class="highlight-icon">⚙️</div><div class="highlight-text">Developed a <strong>CDP event publishing pipeline</strong> using Java, TypeScript, GraphQL and AWS</div></div>
+          <div class="highlight-item"><div class="highlight-icon">🌐</div><div class="highlight-text">Engineered a <strong>distributed multiplayer game server</strong> with spatial chunk partitioning</div></div>
+          <div class="highlight-item"><div class="highlight-icon">🗄️</div><div class="highlight-text">Built <strong>PeerVault</strong>, a P2P distributed file system using FUSE, TCP/IP, UDP and multithreading</div></div>
+          <div class="highlight-item"><div class="highlight-icon">🧠</div><div class="highlight-text">Researching <strong>task-aware adaptive image compression</strong> under a fixed storage budget</div></div>
+        </div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
+          <a href="#projects" class="btn btn-primary" onclick="showPage('projects');return false;">View Projects</a>
+          <a href="#contact" class="btn btn-outline" onclick="showPage('contact');return false;">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== SKILLS PAGE ==================== -->
+<div id="skills" class="page">
+  <div class="section-container">
+    <div class="section-header">
+      <p class="section-tag">// 02. skills</p>
+      <h2 class="section-title">Technical Arsenal</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-category">
+      <div class="skills-category-title">Programming Languages</div>
+      <div class="skills-grid">
+        <div class="skill-card"><div class="skill-icon">☕</div><div class="skill-name">Java</div><div class="skill-level"><div class="skill-level-bar" data-level="90"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">⚡</div><div class="skill-name">C++</div><div class="skill-level"><div class="skill-level-bar" data-level="88"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🐍</div><div class="skill-name">Python</div><div class="skill-level"><div class="skill-level-bar" data-level="85"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">💻</div><div class="skill-name">C</div><div class="skill-level"><div class="skill-level-bar" data-level="75"></div></div></div>
+      </div>
+    </div>
+    <div class="skills-category">
+      <div class="skills-category-title">Web Technologies & Databases</div>
+      <div class="skills-grid">
+        <div class="skill-card"><div class="skill-icon">🌱</div><div class="skill-name">Spring Boot</div><div class="skill-level"><div class="skill-level-bar" data-level="88"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">⚛️</div><div class="skill-name">React</div><div class="skill-level"><div class="skill-level-bar" data-level="80"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🌐</div><div class="skill-name">HTML / CSS</div><div class="skill-level"><div class="skill-level-bar" data-level="82"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🗃️</div><div class="skill-name">SQL / PostgreSQL</div><div class="skill-level"><div class="skill-level-bar" data-level="85"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🍃</div><div class="skill-name">MongoDB</div><div class="skill-level"><div class="skill-level-bar" data-level="72"></div></div></div>
+      </div>
+    </div>
+    <div class="skills-category">
+      <div class="skills-category-title">Cloud & Infrastructure</div>
+      <div class="skills-grid">
+        <div class="skill-card"><div class="skill-icon">☁️</div><div class="skill-name">AWS</div><div class="skill-level"><div class="skill-level-bar" data-level="85"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">λ</div><div class="skill-name">Lambda</div><div class="skill-level"><div class="skill-level-bar" data-level="82"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">📦</div><div class="skill-name">S3 / SQS / DLQ</div><div class="skill-level"><div class="skill-level-bar" data-level="82"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🔒</div><div class="skill-name">VPC / PrivateLink</div><div class="skill-level"><div class="skill-level-bar" data-level="72"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🐳</div><div class="skill-name">Docker</div><div class="skill-level"><div class="skill-level-bar" data-level="78"></div></div></div>
+      </div>
+    </div>
+    <div class="skills-category">
+      <div class="skills-category-title">Systems, ML & Developer Tools</div>
+      <div class="skills-grid">
+        <div class="skill-card"><div class="skill-icon">🌐</div><div class="skill-name">Distributed Systems</div><div class="skill-level"><div class="skill-level-bar" data-level="82"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🔌</div><div class="skill-name">TCP/IP · UDP</div><div class="skill-level"><div class="skill-level-bar" data-level="82"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🔥</div><div class="skill-name">PyTorch / ResNet</div><div class="skill-level"><div class="skill-level-bar" data-level="78"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🐙</div><div class="skill-name">Git / GitHub</div><div class="skill-level"><div class="skill-level-bar" data-level="88"></div></div></div>
+        <div class="skill-card"><div class="skill-icon">🖥️</div><div class="skill-name">Linux / VS Code</div><div class="skill-level"><div class="skill-level-bar" data-level="82"></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== PROJECTS PAGE ==================== -->
+<div id="projects" class="page">
+  <div class="section-container">
+    <div class="section-header"><p class="section-tag">// 03. projects</p><h2 class="section-title">Featured Work</h2><div class="section-line"></div></div>
+    <div class="projects-filter">
+      <button class="filter-btn active" data-filter="all">ALL</button>
+      <button class="filter-btn" data-filter="backend">BACKEND</button>
+      <button class="filter-btn" data-filter="distributed">DISTRIBUTED</button>
+      <button class="filter-btn" data-filter="web">WEB</button>
+      <button class="filter-btn" data-filter="ml">ML</button>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card" data-category="backend">
+        <div class="project-banner"><div class="project-banner-bg" style="background:radial-gradient(ellipse,rgba(0,255,136,0.3),transparent 70%)"></div><span class="project-banner-icon">☁️</span></div>
+        <div class="project-body"><div class="project-tags"><span class="project-tag tag-iot">AWS</span><span class="project-tag tag-ai">JAVA</span><span class="project-tag tag-ai">GRAPHQL</span></div>
+        <h3 class="project-title">CDP Event Publishing Pipeline</h3><p class="project-desc">Amazon project delivering the Resolution Evaluation Event Processor with GraphQL event schemas and an AWS event-processing flow for customer, purchase, returns and concession-history signals.</p>
+        <ul class="project-features"><li>S3, SQS, Lambda and DLQ event processing</li><li>Multi-stage event pipeline with ABCDA pattern</li><li>Handler and Manager layers with Dagger</li><li>GraphQL schemas and per-purchase-unit processing</li></ul></div>
+        <div class="project-footer"><span class="badge badge-green">AWS</span><span class="badge badge-cyan">Java</span><span class="badge badge-magenta">GraphQL</span></div>
+      </div>
+      <div class="project-card" data-category="backend">
+        <div class="project-banner"><div class="project-banner-bg" style="background:radial-gradient(ellipse,rgba(255,0,255,0.3),transparent 70%)"></div><span class="project-banner-icon">💳</span></div>
+        <div class="project-body"><div class="project-tags"><span class="project-tag tag-web">SPRING BOOT</span><span class="project-tag tag-ai">REACT</span><span class="project-tag tag-ai">POSTGRESQL</span></div>
+        <h3 class="project-title">WalletPay – Digital Wallet Platform</h3><p class="project-desc">Full-stack digital wallet supporting authentication, wallet management, fund deposits, P2P transfers and persistent transaction tracking.</p>
+        <ul class="project-features"><li>JWT authentication and wallet management</li><li>P2P transfers with unique transfer identifiers</li><li>Controller-Service-Repository architecture</li><li>JPA, Hibernate and Dockerized PostgreSQL</li></ul></div>
+        <div class="project-footer"><span class="badge badge-magenta">Spring Boot</span><span class="badge badge-cyan">React</span><span class="badge badge-green">PostgreSQL</span><a href="https://github.com/sai0543ganesh/WalletPay" target="_blank" style="margin-left:auto;color:inherit;text-decoration:none">GitHub ↗</a></div>
+      </div>
+      <div class="project-card" data-category="distributed">
+        <div class="project-banner"><div class="project-banner-bg" style="background:radial-gradient(ellipse,rgba(255,107,0,0.3),transparent 70%)"></div><span class="project-banner-icon">🌐</span></div>
+        <div class="project-body"><div class="project-tags"><span class="project-tag tag-blockchain">GO</span><span class="project-tag tag-blockchain">UDP</span><span class="project-tag tag-blockchain">3D</span></div>
+        <h3 class="project-title">Distributed Game Server</h3><p class="project-desc">Distributed multiplayer game server that partitions the world into spatial chunks, coordinates ownership across instances and supports cross-server player migration.</p>
+        <ul class="project-features"><li>Spatial chunk partitioning and ownership</li><li>UDP server communication and state sync</li><li>Dynamic chunk loading and migration</li><li>React / Three.js real-time client</li></ul></div>
+        <div class="project-footer"><span class="badge badge-orange">Go</span><span class="badge badge-cyan">UDP</span><span class="badge badge-green">Three.js</span><a href="https://github.com/sai0543ganesh/DistributedGameServer" target="_blank" style="margin-left:auto;color:inherit;text-decoration:none">GitHub ↗</a></div>
+      </div>
+      <div class="project-card" data-category="distributed">
+        <div class="project-banner"><div class="project-banner-bg" style="background:radial-gradient(ellipse,rgba(0,245,255,0.3),transparent 70%)"></div><span class="project-banner-icon">🗄️</span></div>
+        <div class="project-body"><div class="project-tags"><span class="project-tag tag-rag">P2P</span><span class="project-tag tag-ai">FUSE</span><span class="project-tag tag-ai">NETWORKING</span></div>
+        <h3 class="project-title">PeerVault – P2P Distributed File System</h3><p class="project-desc">P2P distributed storage system with UDP peer discovery and FUSE-based mounting of remote storage over the local network.</p>
+        <ul class="project-features"><li>UDP peer discovery and remote filesystem mounting</li><li>TCP file operations and metadata caching</li><li>Multithreaded socket connections</li><li>XOR encryption and server-side path validation</li></ul></div>
+        <div class="project-footer"><span class="badge badge-cyan">Python</span><span class="badge badge-magenta">FUSE</span><span class="badge badge-green">TCP/IP</span><a href="https://github.com/sai0543ganesh/PeerVault" target="_blank" style="margin-left:auto;color:inherit;text-decoration:none">GitHub ↗</a></div>
+      </div>
+      <div class="project-card" data-category="ml">
+        <div class="project-banner"><div class="project-banner-bg" style="background:radial-gradient(ellipse,rgba(0,102,255,0.3),transparent 70%)"></div><span class="project-banner-icon">🧠</span></div>
+        <div class="project-body"><div class="project-tags"><span class="project-tag tag-web">ML</span><span class="project-tag tag-ai">PYTORCH</span><span class="project-tag tag-ai">RESNET</span></div>
+        <h3 class="project-title">Task-Aware Adaptive Image Compression</h3><p class="project-desc">MTP research project developing a task-aware image compression framework that allocates image-specific compression levels using learned image importance under a fixed storage budget.</p>
+        <ul class="project-features"><li>Image-specific compression allocation</li><li>Learned image importance for downstream tasks</li><li>ResNet-18 based evaluation pipeline</li><li>80.07% validation accuracy achieved</li></ul></div>
+        <div class="project-footer"><span class="badge badge-blue">PyTorch</span><span class="badge badge-cyan">ResNet</span><span class="badge badge-green">ML</span><a href="https://github.com/sai0543ganesh/Task-Aware-Adaptive-Image-Compression" target="_blank" style="margin-left:auto;color:inherit;text-decoration:none">GitHub ↗</a></div>
+      </div>
+      <div class="project-card" data-category="backend">
+        <div class="project-banner"><div class="project-banner-bg" style="background:radial-gradient(ellipse,rgba(124,92,255,0.3),transparent 70%)"></div><span class="project-banner-icon">🧩</span></div>
+        <div class="project-body"><div class="project-tags"><span class="project-tag tag-web">JAVA</span><span class="project-tag tag-ai">OOP</span><span class="project-tag tag-ai">SYSTEM DESIGN</span></div>
+        <h3 class="project-title">LLD Architect – Parking Lot & Music Streaming</h3><p class="project-desc">Low-level design implementations focused on clean object-oriented architecture, SOLID principles, design patterns and concurrency.</p>
+        <ul class="project-features"><li>Parking lot and music streaming system designs</li><li>SOLID principles and reusable abstractions</li><li>Design patterns for extensible components</li><li>Concurrency-aware Java implementations</li></ul></div>
+        <div class="project-footer"><span class="badge badge-magenta">Java</span><span class="badge badge-cyan">OOP</span><span class="badge badge-green">Concurrency</span><a href="https://github.com/sai0543ganesh/lld_architect" target="_blank" style="margin-left:auto;color:inherit;text-decoration:none">GitHub ↗</a></div>
+      </div>
+      <div class="project-card" data-category="ml">
+        <div class="project-banner"><div class="project-banner-bg" style="background:radial-gradient(ellipse,rgba(255,0,102,0.3),transparent 70%)"></div><span class="project-banner-icon">👁️</span></div>
+        <div class="project-body"><div class="project-tags"><span class="project-tag tag-web">PYTHON</span><span class="project-tag tag-ai">OPENCV</span><span class="project-tag tag-ai">ML</span></div>
+        <h3 class="project-title">Driver Drowsiness Detection</h3><p class="project-desc">Computer-vision based driver monitoring project that analyzes visual cues to detect signs of drowsiness and improve driving safety.</p>
+        <ul class="project-features"><li>Real-time facial and eye-state analysis</li><li>Computer vision preprocessing pipeline</li><li>ML-based drowsiness classification</li><li>Designed for continuous driver monitoring</li></ul></div>
+        <div class="project-footer"><span class="badge badge-cyan">Python</span><span class="badge badge-magenta">OpenCV</span><span class="badge badge-green">ML</span><a href="https://github.com/sai0543ganesh/Driver-Drowsiness-Detection" target="_blank" style="margin-left:auto;color:inherit;text-decoration:none">GitHub ↗</a></div>
+      </div>
+      <div class="project-card" data-category="web">
+        <div class="project-banner"><div class="project-banner-bg" style="background:radial-gradient(ellipse,rgba(0,220,255,0.3),transparent 70%)"></div><span class="project-banner-icon">🎬</span></div>
+        <div class="project-body"><div class="project-tags"><span class="project-tag tag-web">PYTHON</span><span class="project-tag tag-ai">ML</span><span class="project-tag tag-ai">RECOMMENDER</span></div>
+        <h3 class="project-title">Content-Based Movie Recommender System</h3><p class="project-desc">Content-based recommendation system that uses movie attributes to identify and rank titles similar to a selected movie.</p>
+        <ul class="project-features"><li>Content-feature based similarity matching</li><li>Movie metadata preprocessing</li><li>Similarity-based recommendation ranking</li><li>Personalized recommendations from item content</li></ul></div>
+        <div class="project-footer"><span class="badge badge-cyan">Python</span><span class="badge badge-green">ML</span><span class="badge badge-magenta">Recommender</span><a href="https://github.com/sai0543ganesh/Content-Based-Movie-Recommender-System" target="_blank" style="margin-left:auto;color:inherit;text-decoration:none">GitHub ↗</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== INTERNSHIPS PAGE ==================== -->
+<div id="internships" class="page">
+  <div class="section-container">
+    <div class="section-header"><p class="section-tag">// 04. experience</p><h2 class="section-title">Internship Timeline</h2><div class="section-line"></div></div>
+    <div class="timeline">
+      <div class="timeline-item glass-card">
+        <div class="timeline-dot" style="background:var(--cyan);box-shadow:var(--glow-cyan)"></div>
+        <div class="timeline-date">MAY 2026 – JUL 2026</div>
+        <div class="timeline-company">AMAZON</div>
+        <div class="timeline-role">Software Development Engineer (SDE) Intern · Hyderabad, India</div>
+        <div class="timeline-desc">Engineered an <strong style="color:var(--cyan)">AWS Lambda event pipeline</strong> using S3, SQS and DLQ to process 250+ resolution evaluation signals and publish downstream events within minutes instead of daily ETL jobs. Built event-driven, multi-stage, multi-region infrastructure in CDK across 4 regions and shipped 15 CRs across 14 packages and 3 interconnected services.</div>
+        <div style="margin-top:1rem;display:flex;gap:0.5rem;flex-wrap:wrap;"><span class="badge badge-cyan">AWS</span><span class="badge badge-magenta">Java</span><span class="badge badge-green">TypeScript</span><span class="badge badge-orange">GraphQL</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== ACHIEVEMENTS PAGE ==================== -->
+<div id="achievements" class="page">
+  <div class="section-container">
+    <div class="section-header"><p class="section-tag">// 05. achievements</p><h2 class="section-title">Milestones & Awards</h2><div class="section-line"></div></div>
+    <div class="counters-row">
+      <div class="counter-card"><div class="counter-number" data-target="1870">1870</div><div class="counter-label">LeetCode Max Rating</div></div>
+      <div class="counter-card"><div class="counter-number" data-target="599">599</div><div class="counter-label">Weekly Contest Rank</div></div>
+      <div class="counter-card"><div class="counter-number" data-target="3">3</div><div class="counter-label">CodeChef Stars</div></div>
+    </div>
+    <div class="achievements-grid">
+      <div class="achievement-card"><div class="achievement-icon">♞</div><h3 class="achievement-title">LeetCode Knight Badge</h3><p class="achievement-desc">Earned the LeetCode Knight badge with a maximum contest rating of 1870 and reached rank 599 in LeetCode Weekly Contest 516.</p><div style="margin-top:1rem;"><span class="badge badge-cyan">1870 Rating</span><span class="badge badge-magenta">Rank 599</span></div></div>
+      <div class="achievement-card"><div class="achievement-icon">⭐</div><h3 class="achievement-title">CodeChef 3★ Coder</h3><p class="achievement-desc">Achieved a 3-star competitive programming rating on CodeChef through consistent problem solving and contest participation.</p><div style="margin-top:1rem;"><span class="badge badge-orange">3★</span></div></div>
+      <div class="achievement-card"><div class="achievement-icon">🏆</div><h3 class="achievement-title">NPTEL Elite Topper</h3><p class="achievement-desc">Recognized as an Elite Topper in the Top 1% for Algorithmic Graph Theory and Data Structures in 2026.</p><div style="margin-top:1rem;"><span class="badge badge-green">Top 1%</span><span class="badge badge-cyan">NPTEL</span></div></div>
+      <div class="achievement-card"><div class="achievement-icon">☁️</div><h3 class="achievement-title">Amazon SDE Internship</h3><p class="achievement-desc">Selected for a Software Development Engineer internship at Amazon and contributed to production AWS event-processing infrastructure.</p><div style="margin-top:1rem;"><span class="badge badge-orange">Amazon</span><span class="badge badge-magenta">SDE Intern</span></div></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== CERTIFICATIONS PAGE ==================== -->
+<div id="certifications" class="page">
+  <div class="section-container">
+    <div class="section-header"><p class="section-tag">// 06. certifications</p><h2 class="section-title">Credentials</h2><div class="section-line"></div></div>
+    <div class="certs-grid">
+      <div class="cert-card"><div class="cert-icon">☕</div><div class="cert-body"><h4>Programming in Java</h4><p>NPTEL · 12 Week Course · Jan–Mar 2023</p></div></div>
+      <div class="cert-card"><div class="cert-icon">🐍</div><div class="cert-body"><h4>Programming, Data Structures and Algorithms using Python</h4><p>NPTEL · 12 Week Course</p></div></div>
+      <div class="cert-card"><div class="cert-icon">📊</div><div class="cert-body"><h4>Data Science for Engineers</h4><p>NPTEL · 12 Week Course · Jul–Sep 2023</p></div></div>
+      <div class="cert-card"><div class="cert-icon">🐍</div><div class="cert-body"><h4>The Joy of Computing Using Python</h4><p>NPTEL · Certificate Score: 79%</p></div></div>
+      <div class="cert-card"><div class="cert-icon">☁️</div><div class="cert-body"><h4>AWS Cloud Virtual Internship</h4><p>Virtual Internship · May–Jul 2023</p></div></div>
+      <div class="cert-card"><div class="cert-icon">🔒</div><div class="cert-body"><h4>Cybersecurity Virtual Internship</h4><p>Palo Alto Networks · Sep–Nov 2023</p></div></div>
+      <div class="cert-card"><div class="cert-icon">💻</div><div class="cert-body"><h4>Master Class on Java Programming</h4><p>Udemy</p></div></div>
+      <div class="cert-card"><div class="cert-icon">📚</div><div class="cert-body"><h4>Core Coursework</h4><p>Data Structures & Algorithms · Concurrency Theory · Distributed Systems · Speech Processing</p></div></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== RESUME PAGE ==================== -->
+<div id="resume" class="page">
+  <div class="section-container">
+    <div class="section-header"><p class="section-tag">// 07. resume</p><h2 class="section-title">My Resume</h2><div class="section-line"></div></div>
+    <div class="resume-container">
+      <div class="resume-preview glass-card">
+        <div class="resume-icon">📄</div>
+        <h3 class="resume-title">SAI GANESH CHATHARASUPALLI</h3>
+        <p class="resume-subtitle">M.Tech Computer Science & Engineering | Software Engineer | Distributed Systems & ML<br>IIT Guwahati · 2025–Present</p>
+        <div class="resume-actions"><a href="Sai_Ganesh_Resume.pdf" download class="btn btn-primary"><span>↓</span> Download Resume</a><a href="Sai_Ganesh_Resume.pdf" target="_blank" class="btn btn-outline"><span>⊞</span> View Full Screen</a></div>
+      </div>
+      <div class="resume-highlights">
+        <div class="resume-highlight"><h4>Education</h4><p>M.Tech CSE · IIT Guwahati · 8.11 CGPA</p></div>
+        <div class="resume-highlight"><h4>Internship</h4><p>Amazon · SDE Intern · May–Jul 2026</p></div>
+        <div class="resume-highlight"><h4>Projects</h4><p>WalletPay · Distributed Game Server · PeerVault · Image Compression</p></div>
+        <div class="resume-highlight"><h4>Coding</h4><p>LeetCode Knight · Max Rating 1870</p></div>
+        <div class="resume-highlight"><h4>Competitive Programming</h4><p>CodeChef 3★ · Rank 599 in Weekly Contest 516</p></div>
+        <div class="resume-highlight"><h4>Research</h4><p>Task-Aware Adaptive Image Compression · MTP</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== CONTACT PAGE ==================== -->
+<div id="contact" class="page">
+  <div class="section-container">
+    <div class="section-header">
+      <p class="section-tag">// 08. contact</p>
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Let's Build Something Amazing</h3>
+        <p>Open to internship opportunities, project collaborations, and hackathon teams. Don't hesitate to reach out — I respond fast!</p>
+        <a class="contact-item" href="mailto:saiganeshchatharasupalli@gmail.com">
+          <div class="contact-item-icon">✉️</div>
+          <div class="contact-item-text">
+            <h4>EMAIL</h4>
+            <p>saiganeshchatharasupalli@gmail.com</p>
+          </div>
+        </a>
+        <a class="contact-item" href="tel:+917013185765">
+          <div class="contact-item-icon">📱</div>
+          <div class="contact-item-text">
+            <h4>PHONE</h4>
+            <p>+91 7013185765</p>
+          </div>
+        </a>
+        <a class="contact-item" href="https://www.google.com/maps/search/?api=1&query=IIT+Guwahati%2C+Assam" target="_blank" rel="noopener noreferrer">
+          <div class="contact-item-icon">📍</div>
+          <div class="contact-item-text">
+            <h4>LOCATION</h4>
+            <p>Guwahati, Assam, India</p>
+          </div>
+        </a>
+        <div class="contact-socials">
+          <a href="https://github.com/sai0543ganesh" target="_blank" class="contact-social-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.01-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.31-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.87.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22 0 1.61-.01 2.9-.01 3.3 0 .32.21.7.82.58C20.56 21.8 24 17.31 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://in.linkedin.com/in/sai-ganesh-chatharasupalli-163287245" target="_blank" class="contact-social-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.21 24 24 23.23 24 22.28V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://leetcode.com/saiganesh0543" target="_blank" class="contact-social-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+            LeetCode
+          </a>
+          <a href="https://www.codechef.com/users/saiganesh_18" target="_blank" class="contact-social-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.257.004C5.23.287.488 5.23.035 11.257c-.453 6.168 4.38 11.6 10.548 11.6h2.917c6.168 0 11-5.432 10.548-11.6C23.595 5.23 18.853.287 12.826.004h-1.57zm-.256 1.94h2.08c5.148.27 9.137 4.52 9.025 9.653-.118 5.37-4.562 9.676-9.934 9.535-5.373.14-9.817-4.165-9.934-9.535-.115-5.134 3.872-9.383 9.02-9.654l-.257.001z"/></svg>
+            CodeChef
+          </a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3>// Send Message</h3>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">YOUR NAME</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">YOUR EMAIL</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">SUBJECT</label>
+            <input type="text" id="subject" name="subject" placeholder="Internship Opportunity / Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="message">MESSAGE</label>
+            <textarea id="message" name="message" placeholder="Hi Sai, I'd like to discuss..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+            <span>⟶</span> SEND MESSAGE
+          </button>
+          <div class="form-msg" id="form-msg"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- THREE.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<!-- MAIN JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
